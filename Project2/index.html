@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow | To Do List</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <main class="app">
+    <section class="todo-card">
+      <div class="header">
+        <div>
+          <p class="eyebrow">Stay organized</p>
+          <h1>TaskFlow</h1>
+          
+        </div>
+        <div class="date-box" id="currentDate"></div>
+      </div>
+
+      <form class="task-form" id="taskForm">
+        <div class="input-wrapper">
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="Write a new task..."
+            autocomplete="off"
+          />
+          <button type="submit" class="add-btn">Add Task</button>
+        </div>
+      </form>
+
+      <div class="controls">
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="pending">Pending</button>
+          <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <div class="status">
+          <span id="taskCounter">0 tasks</span>
+          <button id="clearCompleted" class="clear-btn">Clear Completed</button>
+        </div>
+      </div>
+
+      <ul class="task-list" id="taskList"></ul>
+
+      <div class="empty-state" id="emptyState">
+        <div class="empty-icon">✨</div>
+        <h3>No tasks yet</h3>
+        <p>Add your first task and start being productive.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
