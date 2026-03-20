@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <img src="https://res.cloudinary.com/dngehiato/image/upload/v1742163995/logo_rraga9.jpg" href="#inicio" class="logo" width="90" height="65">
+            
+            <ul class="nav-links">
+                <li><a href="#inicio" class="lang-es">Inicio</a></li>
+                <li><a href="#inicio" class="lang-en">Start</a></li>
+                <li><a href="#proyectos" class="lang-es">Proyectos</a></li>
+                <li><a href="#proyectos" class="lang-en">Projects</a></li>
+                <li><a href="#contacto" class="lang-es">Contacto</a></li>
+                <li><a href="#contacto" class="lang-en">Contact</a></li>
+                <li class="language-selector">
+                    <select id="languageSelect" onchange="changeLanguage(this.value)">
+                        <option value="es">Español</option>
+                        <option value="en">English</option>
+                    </select>
+                </li>
+            </ul>
+            
+            <div class="menu-toggle">
+                <i>≡</i>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="inicio">
+        <div class="hero-content">
+            <div class="profile-container animate">
+                <img src="https://res.cloudinary.com/dngehiato/image/upload/v1742163986/belen_fxsgqt.jpg" alt="Foto de perfil" class="profile-img">
+            </div>
+            
+            <h1 class="typing-effect animate delay-1">Belén Bastos Full Stack Development</h1>
+            <p class="subtitle animate delay-2 lang-es">Desarrollador Web & Movile</p>
+            <p class="subtitle lang-en">Web & Mobile Developer</p>
+            
+            <div class="hero-buttons animate delay-3">
+                <a href="#proyectos" class="btn btn-primary lang-es">Ver Proyectos</a>
+                <a href="#proyectos" class="btn btn-primary lang-en">See Projects</a>
+                <a href="#contacto" class="btn btn-outline lang-es">Contactar</a>
+                <a href="#contacto" class="btn btn-outline lang-en">Contact</a>
+            </div>
+            
+            <div class="social-links animate delay-4">
+                <a href="https://www.linkedin.com/in/bel%C3%A9n-bastos-davila-052269252/" target="_blank" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/belen579" target="_blank" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="about-text">
+                <p class="bio-text lang-es">
+                    Soy desarrolladora multiplataforma con formación en <span class="highlight">Desarrollo de Aplicaciones Multiplataforma</span> (Grado Superior) y un <span class="highlight">Máster en Full Stack Development</span> con Nuclio Digital School, donde realicé un proyecto utilizando React, Next.js y Express que me permitió adquirir valiosos conocimientos en desarrollo web moderno.
+                </p>
+                <p class="bio-text lang-en">
+                    I am a multiplatform developer with training in <span class="highlight">Multiplatform Application Development</span> (Higher Degree) and a <span class="highlight">Master in Full Stack Development</span> with Nuclio Digital School, where I completed a project using React, Next.js, and Express that allowed me to gain valuable knowledge in modern web development.
+                </p>
+                <p class="bio-text lang-es">
+                    A lo largo de mi trayectoria profesional he cultivado experiencia en desarrollo móvil con <span class="highlight">Kotlin</span>, <span class="highlight">Jetpack Compose</span> y <span class="highlight">Java</span>, así como en la integración y gestión de CRM como <span class="highlight">Odoo</span>.
+                </p>
+                <p class="bio-text lang-en">
+                    Throughout my professional career I have cultivated experience in mobile development with <span class="highlight">Kotlin</span>, <span class="highlight">Jetpack Compose</span> and <span class="highlight">Java</span>, as well as in the integration and management of CRM such as <span class="highlight">Odoo</span>.
+                </p>
+                <p class="bio-text lang-es">
+                    Durante el último año, he ampliado mis habilidades en desarrollo web y backend, lo que me ha permitido obtener una visión integral del ciclo completo de desarrollo de aplicaciones. Actualmente, estoy preparada para afrontar proyectos tanto web como móviles, adaptándome ágilmente a las necesidades del cliente y buscando siempre la excelencia técnica y la mejora continua.
+                </p>
+                <p class="bio-text lang-en">
+                    Over the past year, I've expanded my skills in web and backend development, which has allowed me to gain a comprehensive understanding of the entire application development cycle. I'm currently equipped to tackle both web and mobile projects, quickly adapting to client needs and always striving for technical excellence and continuous improvement.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="proyectos">
+        <div class="section-title animate">
+            <h2 class="lang-es">Mis Proyectos</h2>
+            <h2 class="lang-en">My Projects</h2>
+        </div>
+        
+        <div class="projects-container">
+            <div class="project-card animate">
+                <div class="project-video-container">
+                    <video controls class="project-video">
+                        <source src="https://res.cloudinary.com/dngehiato/video/upload/v1742168586/Grupify_hhjfef.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="project-content">
+                    <h3 class="lang-es">Gestión de Eventos Groupify</h3>
+                    <h3 class="lang-en">Groupify Event Management</h3>
+                    <p class="lang-es">Aplicación que conecta a personas con intereses comunes en eventos. Ya sea que busques conectar, hacer amigos o simplemente explorar nuevas oportunidades, esta plataforma garantiza una interacción social fluida con una experiencia dinámica e intuitiva.</p>
+                    <p class="lang-en">An app that connects people with common interests through events. Whether you're looking to connect, make friends, or simply explore new opportunities, this platform guarantees seamless social interaction with a dynamic and intuitive experience.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">TailwindCSS</span>
+                        <span class="tag">Socket.io for real-time communication</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://rojo-frontend.onrender.com/home" class="project-link demo-link lang-es">Acceso a la web</a>
+                        <a href="https://rojo-frontend.onrender.com/home" class="project-link demo-link lang-en">Web access</a>
+                        <a href="https://github.com/belen579/EventsFront" class="project-link code-link">Code Front</a>
+                        <a href="https://github.com/belen579/EventsBack" class="project-link code-link">Code Back</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card animate delay-1">
+                <div class="project-video-container">
+                    <video controls class="project-video">
+                        <source src="https://res.cloudinary.com/dngehiato/video/upload/v1742162467/Piensosbastos_flfev7.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="project-content">
+                    <h3 class="lang-es">Eccomerce Tienda de Piensos Para Animales</h3>
+                    <h3 class="lang-en">Eccomerce Pet Food Store</h3>
+                    
+                    <p class="lang-es">Proyecto de e-commerce desarrollado con Odoo, optimizado para la gestión integral de un almacén de piensos y la venta online. La plataforma permite a los clientes realizar pedidos fácilmente a través de un carrito de compra, con un sistema de envío y reparto eficiente en diversas localidades cercanas.</p>
+                    
+                    <p class="lang-en">E-commerce project developed with Odoo, optimized for the comprehensive management of a feed warehouse and online sales. The platform allows customers to place orders easily through a shopping cart, with an efficient shipping and delivery system in various nearby localities.</p>
+                    
+                    <div class="feature-item lang-es">✅ Gestión de stock avanzada con Odoo CRM</div>
+                    <div class="feature-item lang-es">✅ Carrito de compra intuitivo para una experiencia fluida</div>
+                    <div class="feature-item lang-es">✅ Sistema de reparto optimizado por localidades</div>
+                    <div class="feature-item lang-es">✅ Base de datos PostgreSQL para un rendimiento óptimo</div>
+                    
+                    <div class="feature-item lang-en">✅ Advanced stock management with Odoo CRM</div>
+                    <div class="feature-item lang-en">✅ Intuitive shopping cart for a fluid experience</div>
+                    <div class="feature-item lang-en">✅ Optimized delivery system by localities</div>
+                    <div class="feature-item lang-en">✅ PostgreSQL database for optimal performance</div>
+                    
+                    <div class="project-tags">
+                        <span class="tag">Phyton</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Odoo Web Library</span>
+                        <span class="tag">Html</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://www.piensosbastos.com/inicio" class="project-link demo-link lang-es">Acceso a la Web</a>
+                        <a href="https://www.piensosbastos.com/inicio" class="project-link demo-link lang-en">Access the Website</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card animate delay-2">
+                <img src="https://res.cloudinary.com/dngehiato/image/upload/v1742164025/Redordenadores_skmb1w.jpg" alt="Proyecto 3" class="project-img">
+                <div class="project-content">
+                    <h3 class="lang-es">Gestión de Redes</h3>
+                    <h3 class="lang-en">Network Management</h3>
+                    
+                    <p class="lang-es">Escaneo de red con Nmap: Detecta equipos conectados y analiza los puertos abiertos en tiempo real.</p>
+                    <div class="feature-item lang-es">✅ Interfaz web intuitiva: Visualiza de manera clara y organizada el estado de los dispositivos en la red.</div>
+                    <div class="feature-item lang-es">✅ Gestión remota con SSH: Permite enviar comandos directamente a los equipos y ejecutar actualizaciones de forma remota.</div>
+                    <div class="feature-item lang-es">✅ Feedback en tiempo real: Informa sobre posibles errores en las conexiones o ejecuciones de comandos.</div>
+                    
+                    <p class="lang-en">Network scanning with Nmap: Detects connected equipment and analyzes open ports in real time.</p>
+                    <div class="feature-item lang-en">✅ Intuitive web interface: Visualize the status of devices on the network in a clear and organized way.</div>
+                    <div class="feature-item lang-en">✅ Remote management with SSH: Send commands directly to the equipment and execute updates remotely.</div>
+                    <div class="feature-item lang-en">✅ Real-time feedback: Reports possible errors in connections or command executions.</div>
+                    
+                    <div class="project-tags">
+                        <span class="tag">Phyton</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Symfony</span>
+                        <span class="tag">Twig</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="#" class="project-link demo-link lang-es">En proceso de ejecución</a>
+                        <a href="#" class="project-link demo-link lang-en">In development process</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contacto">
+        <div class="section-title animate">
+            <h2 class="lang-es">Contáctame</h2>
+            <h2 class="lang-en">Contact Me</h2>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info animate">
+                <div class="contact-item">
+                    <div class="contact-icon lang-es">E</div>
+                    <div class="contact-icon lang-en">E</div>
+                    <div class="contact-details">
+                        <h3 class="lang-es">Email</h3>
+                        <h3 class="lang-en">Email</h3>
+                        <p>belenbastos5@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon lang-es">T</div>
+                    <div class="contact-icon lang-en">P</div>
+                    <div class="contact-details">
+                        <h3 class="lang-es">Teléfono</h3>
+                        <h3 class="lang-en">Phone</h3>
+                        <p>+34 610984463</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon lang-es">U</div>
+                    <div class="contact-icon lang-en">L</div>
+                    <div class="contact-details">
+                        <h3 class="lang-es">Ubicación</h3>
+                        <h3 class="lang-en">Location</h3>
+                        <p class="lang-es">Vigo, España</p>
+                        <p class="lang-en">Vigo, Spain</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon lang-es">D</div>
+                    <div class="contact-icon lang-en">A</div>
+                    <div class="contact-details">
+                        <h3 class="lang-es">Disponibilidad</h3>
+                        <h3 class="lang-en">Availability</h3>
+                        <p class="lang-es">Disponible para proyectos freelance y oportunidades a tiempo completo</p>
+                        <p class="lang-en">Available for freelance projects and full-time opportunities</p>
+                    </div>
+                </div>
+            </div>
+            
+            <form id="contactForm" class="contact-form animate delay-1" action="https://formsubmit.co/4d4fa1c524ff5f2a1ba4be431a551c93" method="POST">
+                <div class="form-group">
+                    <label for="name" class="lang-es">Nombre</label>
+                    <label for="name" class="lang-en">Name</label>
+                    <input type="text" id="name" name="name" class="form-control lang-es" placeholder="Tu nombre">
+                    <input type="text" id="name-en" name="name" class="form-control lang-en" placeholder="Your name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="lang-es">Email</label>
+                    <label for="email" class="lang-en">Email</label>
+                    <input type="email" id="email" name="email" class="form-control lang-es" placeholder="Tu correo electrónico">
+                    <input type="email" id="email-en" name="email" class="form-control lang-en" placeholder="Your email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject" class="lang-es">Asunto</label>
+                    <label for="subject" class="lang-en">Subject</label>
+                    <input type="text" id="subject" name="subject" class="form-control lang-es" placeholder="Asunto del mensaje">
+                    <input type="text" id="subject-en" name="subject" class="form-control lang-en" placeholder="Message subject">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message" class="lang-es">Mensaje</label>
+                    <label for="message" class="lang-en">Message</label>
+                    <textarea id="message" name="message" class="form-control lang-es" placeholder="Tu mensaje"></textarea>
+                    <textarea id="message-en" name="message" class="form-control lang-en" placeholder="Your message"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary lang-es">Enviar Mensaje</button>
+                <button type="submit" class="btn btn-primary lang-en">Send Message</button>
+            </form>
+            
+            <div id="successMessage" class="success-message">
+                <p class="lang-es"><strong>¡Mensaje enviado correctamente!</strong> Gracias por contactarme, te responderé lo antes posible.</p>
+                <p class="lang-en"><strong>Message sent successfully!</strong> Thank you for contacting me, I'll get back to you as soon as possible.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Portfolio Belén Bastos</div>
+            
+            <ul class="footer-links">
+                <li><a href="#inicio" class="lang-es">Inicio</a><a href="#inicio" class="lang-en">Home</a></li>
+                <li><a href="#proyectos" class="lang-es">Proyectos</a><a href="#proyectos" class="lang-en">Projects</a></li>
+                <li><a href="#contacto" class="lang-es">Contacto</a><a href="#contacto" class="lang-en">Contact</a></li>
+            </ul>
+            
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/bel%C3%A9n-bastos-davila-052269252/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/belen579" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <p class="copyright lang-es">&copy; 2025 Belén Bastos Davila. Todos los derechos reservados.</p>
+            <p class="copyright lang-en">&copy; 2025 Belén Bastos Davila. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
