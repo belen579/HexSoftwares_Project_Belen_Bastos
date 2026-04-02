@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classic Music Player</title>
+  <link rel="stylesheet" href="music.css" />
+</head>
+<body>
+  <div class="player-container">
+    <div class="player-card">
+      <div class="image-section">
+        <img id="cover" src="images/cover1.jpg" alt="Song cover" />
+      </div>
+
+      
+
+      <div class="info-section">
+        <h1>Classic Music Player</h1>
+        <h2 id="title">Select a song</h2>
+        <p id="artist">Artist</p>
+
+        <audio id="audio"></audio>
+
+        <div class="progress-section">
+          <input type="range" id="progress" value="0" min="0" max="100" />
+          <div class="time">
+            <span id="currentTime">0:00</span>
+            <span id="duration">0:00</span>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="prev">⏮</button>
+          <button id="play">▶</button>
+          <button id="next">⏭</button>
+        </div>
+
+        <div class="volume-section">
+          <label for="volume">Volume</label>
+          <input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
+        </div>
+      </div>
+
+      <div class="equalizer" id="equalizer">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+ 
+
+    <div class="playlist-section">
+      <h2>Playlist</h2>
+      <ul id="playlist"></ul>
+    </div>
+  </div>
+
+  <script src="music.js"></script>
+</body>
+</html>
