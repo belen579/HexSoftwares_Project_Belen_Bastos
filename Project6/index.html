@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vida Salvaje | Organización benéfica animal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+
+      <a href="#inicio" class="logo">Vida<span>Salvaje</span></a>
+     
+    
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="menu" id="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#mision">Misión</a>
+        <a href="#animales">Animales</a>
+        <a href="#programas">Programas</a>
+        <a href="#impacto">Impacto</a>
+        <a href="#donar">Donar</a>
+        <a href="#contacto">Contacto</a>
+        <div class="lang-select">
+            <select onchange="changeLanguage(this.value)">
+              <option value="index.html">Spanish</option>
+              <option value="index-en.html">English</option>
+            </select>
+          </div>
+      </nav>
+      
+    </div>
+  </header>
+
+  <div class="lang-bar">
+    <a href="index.html">Spanish</a>
+    <a href="index-en.html">English</a>
+  </div>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="tag">Protegemos especies en peligro</span>
+          <h1>Dales una oportunidad a los animales que más nos necesitan</h1>
+          <p>
+            Ayudamos a rescatar, alimentar, tratar y conservar especies amenazadas.
+            Con tu ayuda podemos proteger su hogar y asegurar su futuro.
+          </p>
+          <div class="hero-actions">
+            <a href="#animales" class="btn btn-primary">Ver animales</a>
+            <a href="#donar" class="btn btn-secondary">Cómo donar</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <strong>18+</strong>
+              <span>proyectos activos</span>
+            </div>
+            <div>
+              <strong>1.250</strong>
+              <span>animales asistidos</span>
+            </div>
+            <div>
+              <strong>32</strong>
+              <span>zonas protegidas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="mision">
+      <div class="container two-col">
+        <div>
+          <span class="section-kicker">Nuestra misión</span>
+          <h2>Defender la vida silvestre con acciones reales</h2>
+          <p class="section-text">
+            Somos una organización dedicada a la protección de animales en peligro de extinción.
+            Trabajamos en rescate, alimentación, atención veterinaria, reproducción controlada,
+            educación ambiental y conservación de hábitats.
+          </p>
+          <ul class="check-list">
+            <li>Rescate y rehabilitación de especies vulnerables</li>
+            <li>Atención médica y alimentación especializada</li>
+            <li>Protección de bosques, selvas y reservas naturales</li>
+            <li>Campañas educativas para comunidades y escuelas</li>
+          </ul>
+        </div>
+        <div class="mission-card">
+          <h3>¿Qué hace posible tu donación?</h3>
+          <div class="mini-grid">
+            <article>
+              <strong>Alimento</strong>
+              <p>Dietas adaptadas a cada especie.</p>
+            </article>
+            <article>
+              <strong>Medicina</strong>
+              <p>Tratamientos y revisiones veterinarias.</p>
+            </article>
+            <article>
+              <strong>Rescate</strong>
+              <p>Transporte, refugio y seguimiento.</p>
+            </article>
+            <article>
+              <strong>Conservación</strong>
+              <p>Acciones directas sobre su hábitat.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="animales">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Animales protegidos</span>
+            <h2>Haz clic en cada tarjeta para ver su historia y cómo ayudar</h2>
+          </div>
+          <p>
+            Cada especie tiene necesidades distintas. Al desplegar cada tarjeta podrás ver
+            en qué se usa la donación y qué opciones tienes para colaborar.
+          </p>
+        </div>
+
+        <div class="animal-grid">
+          <article class="animal-card">
+            <button class="animal-toggle" aria-expanded="false">
+              <div class="animal-image tiger"></div>
+              <div class="animal-summary">
+                <span class="animal-status critical">En peligro</span>
+                <h3>Tigre de Bengala</h3>
+                <p>Protección frente a la caza furtiva y pérdida de hábitat.</p>
+                <span class="animal-cta">Haz clic para ver cómo donar</span>
+              </div>
+            </button>
+            <div class="animal-details">
+              <p>
+                El tigre de Bengala está amenazado por la deforestación, la fragmentación de su
+                territorio y la caza ilegal. Necesita grandes zonas seguras para sobrevivir.
+              </p>
+              <div class="donation-uses">
+                <h4>¿Para qué sirve tu donación?</h4>
+                <ul>
+                  <li><strong>10€</strong>: alimento y suplementos por 2 días.</li>
+                  <li><strong>25€</strong>: revisión veterinaria básica.</li>
+                  <li><strong>60€</strong>: apoyo a vigilancia contra furtivos.</li>
+                  <li><strong>120€</strong>: seguimiento y protección del hábitat.</li>
+                </ul>
+              </div>
+              <div class="donation-methods">
+                <h4>Cómo donar para este animal</h4>
+                <p>Donación única, padrinazgo mensual o campaña para proteger reservas naturales.</p>
+                <a href="#donar" class="inline-link">Ir a la sección de donación</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="animal-card">
+            <button class="animal-toggle" aria-expanded="false">
+              <div class="animal-image elephant"></div>
+              <div class="animal-summary">
+                <span class="animal-status vulnerable">Vulnerable</span>
+                <h3>Elefante africano</h3>
+                <p>Necesita agua, protección migratoria y atención veterinaria.</p>
+                <span class="animal-cta">Haz clic para ver cómo donar</span>
+              </div>
+            </button>
+            <div class="animal-details">
+              <p>
+                La presión humana, la caza por marfil y la escasez de recursos hídricos afectan a
+                muchas poblaciones de elefantes africanos.
+              </p>
+              <div class="donation-uses">
+                <h4>¿Para qué sirve tu donación?</h4>
+                <ul>
+                  <li><strong>15€</strong>: suministro de agua de emergencia.</li>
+                  <li><strong>30€</strong>: curas y material veterinario.</li>
+                  <li><strong>75€</strong>: monitoreo por GPS y seguimiento.</li>
+                  <li><strong>150€</strong>: mantenimiento de corredores seguros.</li>
+                </ul>
+              </div>
+              <div class="donation-methods">
+                <h4>Cómo donar para este animal</h4>
+                <p>Puedes donar una cantidad puntual, colaborar cada mes o financiar kits de rescate.</p>
+                <a href="#donar" class="inline-link">Ir a la sección de donación</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="animal-card">
+            <button class="animal-toggle" aria-expanded="false">
+              <div class="animal-image panda"></div>
+              <div class="animal-summary">
+                <span class="animal-status watch">Protección activa</span>
+                <h3>Panda gigante</h3>
+                <p>Conservación de bosques de bambú y programas de cría.</p>
+                <span class="animal-cta">Haz clic para ver cómo donar</span>
+              </div>
+            </button>
+            <div class="animal-details">
+              <p>
+                Aunque su situación ha mejorado, el panda gigante sigue necesitando programas de
+                conservación, restauración forestal y monitoreo constante.
+              </p>
+              <div class="donation-uses">
+                <h4>¿Para qué sirve tu donación?</h4>
+                <ul>
+                  <li><strong>12€</strong>: alimento especializado y enriquecimiento.</li>
+                  <li><strong>28€</strong>: cuidado diario en centro de conservación.</li>
+                  <li><strong>80€</strong>: reforestación de bambú.</li>
+                  <li><strong>140€</strong>: apoyo a reproducción y seguimiento científico.</li>
+                </ul>
+              </div>
+              <div class="donation-methods">
+                <h4>Cómo donar para este animal</h4>
+                <p>Elige una donación puntual, un plan mensual o participa en campañas de reforestación.</p>
+                <a href="#donar" class="inline-link">Ir a la sección de donación</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="animal-card">
+            <button class="animal-toggle" aria-expanded="false">
+              <div class="animal-image deer"></div>
+              <div class="animal-summary">
+                <span class="animal-status endangered">Amenazado</span>
+                <h3>Ciervo rojo</h3>
+                <p>Protección de bosques, control sanitario y refugios seguros.</p>
+                <span class="animal-cta">Haz clic para ver cómo donar</span>
+              </div>
+            </button>
+            <div class="animal-details">
+              <p>
+                En algunas zonas, el ciervo rojo se enfrenta a la degradación ambiental, incendios,
+                falta de refugio y desequilibrios en el ecosistema.
+              </p>
+              <div class="donation-uses">
+                <h4>¿Para qué sirve tu donación?</h4>
+                <ul>
+                  <li><strong>8€</strong>: aporte alimentario complementario.</li>
+                  <li><strong>20€</strong>: chequeo veterinario preventivo.</li>
+                  <li><strong>50€</strong>: restauración de refugios forestales.</li>
+                  <li><strong>110€</strong>: vigilancia y conservación del entorno.</li>
+                </ul>
+              </div>
+              <div class="donation-methods">
+                <h4>Cómo donar para este animal</h4>
+                <p>Contribuye con una ayuda puntual o apadrina un programa de recuperación del bosque.</p>
+                <a href="#donar" class="inline-link">Ir a la sección de donación</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="programas">
+      <div class="container">
+        <div class="section-heading center">
+          <span class="section-kicker">Nuestros programas</span>
+          <h2>Trabajamos en cada etapa del cuidado animal</h2>
+        </div>
+        <div class="program-grid">
+          <article class="program-card">
+            <h3>Rescate y emergencia</h3>
+            <p>Atendemos animales heridos, desnutridos o desplazados de su hábitat natural.</p>
+          </article>
+          <article class="program-card">
+            <h3>Centros de recuperación</h3>
+            <p>Brindamos alimentación, refugio, observación y rehabilitación especializada.</p>
+          </article>
+          <article class="program-card">
+            <h3>Conservación del hábitat</h3>
+            <p>Protegemos zonas clave para evitar la desaparición de especies y ecosistemas.</p>
+          </article>
+          <article class="program-card">
+            <h3>Educación y sensibilización</h3>
+            <p>Realizamos campañas para enseñar cómo cuidar la fauna y reducir amenazas humanas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section impact-section" id="impacto">
+      <div class="container impact-grid">
+        <div>
+          <span class="section-kicker">Impacto real</span>
+          <h2>Tu ayuda se transforma en acciones visibles</h2>
+          <p class="section-text">
+            Cada aportación cuenta. Gracias a nuestros donantes podemos responder con rapidez,
+            mantener centros de protección y sostener proyectos a largo plazo.
+          </p>
+        </div>
+        <div class="impact-cards">
+          <div class="impact-card">
+            <strong>420</strong>
+            <span>rescates durante el último año</span>
+          </div>
+          <div class="impact-card">
+            <strong>85%</strong>
+            <span>de recuperación en casos tratados a tiempo</span>
+          </div>
+          <div class="impact-card">
+            <strong>12</strong>
+            <span>campañas activas de conservación</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section donate-section" id="donar">
+      <div class="container donate-layout">
+        <div>
+          <span class="section-kicker">Cómo donar</span>
+          <h2>Elige la forma de ayuda que mejor se adapte a ti</h2>
+          <div class="donation-options">
+            <article>
+              <h3>Donación única</h3>
+              <p>Ideal para apoyar una necesidad concreta o una emergencia animal.</p>
+            </article>
+            <article>
+              <h3>Donación mensual</h3>
+              <p>Nos ayuda a mantener alimento, tratamientos y personal de rescate.</p>
+            </article>
+            <article>
+              <h3>Apadrinar una especie</h3>
+              <p>Contribuyes de forma continua al bienestar y conservación de un animal específico.</p>
+            </article>
+            <article>
+              <h3>Donación corporativa</h3>
+              <p>Empresas y asociaciones pueden financiar campañas o proyectos completos.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="donation-box">
+          <h3>Simulador de donación</h3>
+          <p>Selecciona un animal y una cantidad para ver el destino estimado de tu ayuda.</p>
+
+          <form id="donationForm" class="donation-form">
+            <label>
+              Animal
+              <select id="animalSelect">
+                <option value="Tigre de Bengala">Tigre de Bengala</option>
+                <option value="Elefante africano">Elefante africano</option>
+                <option value="Panda gigante">Panda gigante</option>
+                <option value="Ciervo rojo">Ciervo rojo</option>
+              </select>
+            </label>
+
+            <label>
+              Cantidad (€)
+              <input type="number" id="amount" min="1" placeholder="Ej. 25">
+            </label>
+
+            <button type="submit" class="btn btn-primary full">Ver mensaje</button>
+          </form>
+
+          <div class="donation-result" id="donationResult">
+            Tu mensaje de ayuda aparecerá aquí.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacto">
+    <div class="container footer-grid">
+      <div>
+        <a href="#inicio" class="logo footer-logo">Vida<span>Salvaje</span></a>
+        <p>Protegiendo animales en peligro de extinción mediante rescate, conservación y educación.</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>Email: ayuda@vidasalvaje.org</p>
+        <p>Tel: +34 900 123 456</p>
+      </div>
+      <div>
+        <h4>Donaciones</h4>
+        <p>Bizum solidario</p>
+        <p>Transferencia bancaria</p>
+        <p>Colaboración mensual</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 VidaSalvaje. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

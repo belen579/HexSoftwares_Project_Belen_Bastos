@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WildLife Care | Animal Charity Organization</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      
+      <a href="#home" class="logo">WildLife<span>Care</span></a>
+     
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+     
+      <nav class="menu" id="menu">
+        <a href="#home">Home</a>
+        <a href="#mission">Mission</a>
+        <a href="#animals">Animals</a>
+        <a href="#programs">Programs</a>
+        <a href="#impact">Impact</a>
+        <a href="#donate">Donate</a>
+        <a href="#contact">Contact</a>
+
+        <div class="lang-select">
+            <select onchange="changeLanguage(this.value)">
+              <option value="index.html">Spanish</option>
+              <option value="index-en.html" selected>English</option>
+            </select>
+          </div>
+         
+      </nav>
+     
+    </div>
+  </header>
+
+
+
+  <main>
+    <section class="hero" id="home">
+      <div class="overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="tag">Protecting endangered species</span>
+          <h1>Give hope to the animals that need us most</h1>
+          <p>
+            We help rescue, feed, treat, and protect endangered species.
+            With your support, we can preserve their habitat and secure their future.
+          </p>
+          <div class="hero-actions">
+            <a href="#animals" class="btn btn-primary">See Animals</a>
+            <a href="#donate" class="btn btn-secondary">How to Donate</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <strong>18+</strong>
+              <span>active projects</span>
+            </div>
+            <div>
+              <strong>1,250</strong>
+              <span>animals assisted</span>
+            </div>
+            <div>
+              <strong>32</strong>
+              <span>protected areas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="mission">
+      <div class="container two-col">
+        <div>
+          <span class="section-kicker">Our mission</span>
+          <h2>Defending wildlife through real action</h2>
+          <p class="section-text">
+            We are an organization dedicated to protecting endangered animals.
+            Our work includes rescue, feeding, veterinary care, controlled breeding,
+            environmental education, and habitat conservation.
+          </p>
+          <ul class="check-list">
+            <li>Rescue and rehabilitation of vulnerable species</li>
+            <li>Medical care and specialized nutrition</li>
+            <li>Protection of forests, jungles, and wildlife reserves</li>
+            <li>Educational campaigns for communities and schools</li>
+          </ul>
+        </div>
+        <div class="mission-card">
+          <h3>What does your donation make possible?</h3>
+          <div class="mini-grid">
+            <article>
+              <strong>Food</strong>
+              <p>Special diets adapted to each species.</p>
+            </article>
+            <article>
+              <strong>Medicine</strong>
+              <p>Treatments and veterinary checkups.</p>
+            </article>
+            <article>
+              <strong>Rescue</strong>
+              <p>Transport, shelter, and follow-up care.</p>
+            </article>
+            <article>
+              <strong>Conservation</strong>
+              <p>Direct action to protect habitats.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="animals">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Protected animals</span>
+            <h2>Click each card to see its story and how you can help</h2>
+          </div>
+          <p>
+            Every species has different needs. When you expand a card,
+            you will see how donations are used and the ways you can support that animal.
+          </p>
+        </div>
+
+        <div class="animal-grid">
+          <article class="animal-card">
+            <button class="animal-toggle" aria-expanded="false">
+              <div class="animal-image tiger"></div>
+              <div class="animal-summary">
+                <span class="animal-status critical">Endangered</span>
+                <h3>Bengal Tiger</h3>
+                <p>Protection against poaching and habitat loss.</p>
+                <span class="animal-cta">Click to see how to donate</span>
+              </div>
+            </button>
+            <div class="animal-details">
+              <div>
+                <p>
+                  The Bengal tiger is threatened by deforestation, habitat fragmentation,
+                  and illegal hunting. It needs large protected areas to survive.
+                </p>
+                <div class="donation-uses">
+                  <h4>What is your donation used for?</h4>
+                  <ul>
+                    <li><strong>€10</strong>: food and supplements for 2 days.</li>
+                    <li><strong>€25</strong>: basic veterinary checkup.</li>
+                    <li><strong>€60</strong>: support for anti-poaching patrols.</li>
+                    <li><strong>€120</strong>: habitat protection and monitoring.</li>
+                  </ul>
+                </div>
+                <div class="donation-methods">
+                  <h4>How to donate for this animal</h4>
+                  <p>Choose a one-time donation, monthly sponsorship, or campaign support to protect natural reserves.</p>
+                  <a href="#donate" class="inline-link">Go to donation section</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="animal-card">
+            <button class="animal-toggle" aria-expanded="false">
+              <div class="animal-image elephant"></div>
+              <div class="animal-summary">
+                <span class="animal-status vulnerable">Vulnerable</span>
+                <h3>African Elephant</h3>
+                <p>Needs water, migration protection, and veterinary care.</p>
+                <span class="animal-cta">Click to see how to donate</span>
+              </div>
+            </button>
+            <div class="animal-details">
+              <div>
+                <p>
+                  Human pressure, ivory hunting, and water scarcity affect many African elephant populations.
+                </p>
+                <div class="donation-uses">
+                  <h4>What is your donation used for?</h4>
+                  <ul>
+                    <li><strong>€15</strong>: emergency water supply.</li>
+                    <li><strong>€30</strong>: medical supplies and treatment.</li>
+                    <li><strong>€75</strong>: GPS monitoring and field tracking.</li>
+                    <li><strong>€150</strong>: maintenance of safe wildlife corridors.</li>
+                  </ul>
+                </div>
+                <div class="donation-methods">
+                  <h4>How to donate for this animal</h4>
+                  <p>You can make a one-time donation, support monthly, or fund rescue kits.</p>
+                  <a href="#donate" class="inline-link">Go to donation section</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="animal-card">
+            <button class="animal-toggle" aria-expanded="false">
+              <div class="animal-image panda"></div>
+              <div class="animal-summary">
+                <span class="animal-status watch">Protected</span>
+                <h3>Giant Panda</h3>
+                <p>Bamboo forest conservation and breeding programs.</p>
+                <span class="animal-cta">Click to see how to donate</span>
+              </div>
+            </button>
+            <div class="animal-details">
+              <div>
+                <p>
+                  Although its situation has improved, the giant panda still requires
+                  conservation programs, forest restoration, and regular monitoring.
+                </p>
+                <div class="donation-uses">
+                  <h4>What is your donation used for?</h4>
+                  <ul>
+                    <li><strong>€12</strong>: specialized food and enrichment.</li>
+                    <li><strong>€28</strong>: daily care at a conservation center.</li>
+                    <li><strong>€80</strong>: bamboo reforestation support.</li>
+                    <li><strong>€140</strong>: scientific monitoring and breeding programs.</li>
+                  </ul>
+                </div>
+                <div class="donation-methods">
+                  <h4>How to donate for this animal</h4>
+                  <p>Make a one-time donation, choose a monthly plan, or support reforestation campaigns.</p>
+                  <a href="#donate" class="inline-link">Go to donation section</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="animal-card">
+            <button class="animal-toggle" aria-expanded="false">
+              <div class="animal-image deer"></div>
+              <div class="animal-summary">
+                <span class="animal-status endangered">Threatened</span>
+                <h3>Red Deer</h3>
+                <p>Forest protection, health control, and safe shelters.</p>
+                <span class="animal-cta">Click to see how to donate</span>
+              </div>
+            </button>
+            <div class="animal-details">
+              <div>
+                <p>
+                  In some regions, the red deer faces environmental degradation,
+                  wildfires, habitat loss, and ecosystem imbalance.
+                </p>
+                <div class="donation-uses">
+                  <h4>What is your donation used for?</h4>
+                  <ul>
+                    <li><strong>€8</strong>: supplementary feeding support.</li>
+                    <li><strong>€20</strong>: preventive veterinary checkup.</li>
+                    <li><strong>€50</strong>: restoration of forest shelters.</li>
+                    <li><strong>€110</strong>: ecosystem monitoring and protection.</li>
+                  </ul>
+                </div>
+                <div class="donation-methods">
+                  <h4>How to donate for this animal</h4>
+                  <p>Contribute with a one-time donation or sponsor a forest recovery program.</p>
+                  <a href="#donate" class="inline-link">Go to donation section</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="programs">
+      <div class="container">
+        <div class="section-heading center">
+          <span class="section-kicker">Our programs</span>
+          <h2>We work through every stage of animal care</h2>
+        </div>
+        <div class="program-grid">
+          <article class="program-card">
+            <h3>Rescue and emergency</h3>
+            <p>We assist injured, malnourished, or displaced animals from their natural habitat.</p>
+          </article>
+          <article class="program-card">
+            <h3>Recovery centers</h3>
+            <p>We provide food, shelter, observation, and specialized rehabilitation.</p>
+          </article>
+          <article class="program-card">
+            <h3>Habitat conservation</h3>
+            <p>We protect key ecosystems to prevent the disappearance of species and habitats.</p>
+          </article>
+          <article class="program-card">
+            <h3>Education and awareness</h3>
+            <p>We run campaigns to teach people how to protect wildlife and reduce human threats.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section impact-section" id="impact">
+      <div class="container impact-grid">
+        <div>
+          <span class="section-kicker">Real impact</span>
+          <h2>Your help becomes visible action</h2>
+          <p class="section-text">
+            Every contribution matters. Thanks to our donors, we can respond quickly,
+            maintain protection centers, and sustain long-term conservation projects.
+          </p>
+        </div>
+        <div class="impact-cards">
+          <div class="impact-card">
+            <strong>420</strong>
+            <span>rescues in the last year</span>
+          </div>
+          <div class="impact-card">
+            <strong>85%</strong>
+            <span>recovery rate in early-treated cases</span>
+          </div>
+          <div class="impact-card">
+            <strong>12</strong>
+            <span>active conservation campaigns</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section donate-section" id="donate">
+      <div class="container donate-layout">
+        <div>
+          <span class="section-kicker">How to donate</span>
+          <h2>Choose the way of helping that fits you best</h2>
+          <div class="donation-options">
+            <article>
+              <h3>One-time donation</h3>
+              <p>Perfect for supporting a specific need or emergency situation.</p>
+            </article>
+            <article>
+              <h3>Monthly donation</h3>
+              <p>Helps us maintain food supplies, treatments, and rescue teams.</p>
+            </article>
+            <article>
+              <h3>Sponsor a species</h3>
+              <p>You continuously support the wellbeing and conservation of a specific animal.</p>
+            </article>
+            <article>
+              <h3>Corporate donation</h3>
+              <p>Companies and associations can fund complete projects or campaigns.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="donation-box">
+          <h3>Donation simulator</h3>
+          <p>Select an animal and an amount to see the estimated impact of your support.</p>
+
+          <form id="donationForm" class="donation-form">
+            <label>
+              Animal
+              <select id="animalSelect">
+                <option value="Bengal Tiger">Bengal Tiger</option>
+                <option value="African Elephant">African Elephant</option>
+                <option value="Giant Panda">Giant Panda</option>
+                <option value="Red Deer">Red Deer</option>
+              </select>
+            </label>
+
+            <label>
+              Amount (€)
+              <input type="number" id="amount" min="1" placeholder="Ex. 25">
+            </label>
+
+            <button type="submit" class="btn btn-primary full">See message</button>
+          </form>
+
+          <div class="donation-result" id="donationResult">
+            Your donation message will appear here.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="logo footer-logo">WildLife<span>Care</span></a>
+        <p>Protecting endangered animals through rescue, conservation, and education.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: help@wildlifecare.org</p>
+        <p>Phone: +34 900 123 456</p>
+      </div>
+      <div>
+        <h4>Donations</h4>
+        <p>Charity Bizum</p>
+        <p>Bank transfer</p>
+        <p>Monthly support</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 WildLifeCare. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
