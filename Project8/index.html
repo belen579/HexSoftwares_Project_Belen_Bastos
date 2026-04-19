@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Book Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav-wrapper">
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#featured">Featured</a>
+        <a href="#arrivals">Arrivals</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#blogs">Blogs</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-overlay">
+      <div class="container hero-content">
+        <h1>Online Book Store</h1>
+        <p>Search books, add new books, organize categories, and manage borrowing history.</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="section-heading" id="arrivals">
+      <div class="line"></div>
+      <h2>New Arrivals</h2>
+      <div class="line"></div>
+    </section>
+
+    <section class="controls">
+      <input type="text" id="searchInput" placeholder="Search by title or author..." />
+      <select id="filterCategory">
+        <option value="All">All Categories</option>
+        <option value="Fiction">Fiction</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Romance">Romance</option>
+        <option value="Science">Science</option>
+        <option value="Biography">Biography</option>
+      </select>
+      <select id="filterStatus">
+        <option value="All">All Status</option>
+        <option value="Available">Available</option>
+        <option value="Borrowed">Borrowed</option>
+      </select>
+    </section>
+
+    <section class="layout">
+      <aside class="add-panel" id="featured">
+        <h3>Add New Book</h3>
+        <form id="bookForm">
+          <input type="text" id="title" placeholder="Book title" required />
+          <input type="text" id="author" placeholder="Author name" required />
+
+          <select id="category" required>
+            <option value="">Select category</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Romance">Romance</option>
+            <option value="Science">Science</option>
+            <option value="Biography">Biography</option>
+          </select>
+
+          <input type="number" id="year" placeholder="Published year" required />
+          <input type="file" id="image" accept="image/png, image/jpeg" />
+          <textarea id="description" placeholder="Short description"></textarea>
+
+          <button type="submit">Add Book</button>
+        </form>
+
+        <div class="stats">
+          <div class="stat-box">
+            <span>Total</span>
+            <strong id="totalBooks">0</strong>
+          </div>
+          <div class="stat-box">
+            <span>Available</span>
+            <strong id="availableBooks">0</strong>
+          </div>
+          <div class="stat-box">
+            <span>Borrowed</span>
+            <strong id="borrowedBooks">0</strong>
+          </div>
+        </div>
+      </aside>
+
+      <section class="books-section">
+        <div id="bookList" class="book-list"></div>
+      </section>
+    </section>
+
+    <section class="info-section" id="reviews">
+      <div class="section-heading small-heading">
+        <div class="line"></div>
+        <h2>Reviews</h2>
+        <div class="line"></div>
+      </div>
+      <div class="info-boxes">
+        <div class="info-box">
+          <h4>Readers Love the Collection</h4>
+          <p>Find modern titles, classics, and personal favorites in a bookstore style layout.</p>
+        </div>
+        <div class="info-box">
+          <h4>Easy Borrow Tracking</h4>
+          <p>Keep control of available and borrowed books with one click.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="history-section" id="blogs">
+      <div class="section-heading small-heading">
+        <div class="line"></div>
+        <h2>Borrowing History</h2>
+        <div class="line"></div>
+      </div>
+      <div id="historyList" class="history-list"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
