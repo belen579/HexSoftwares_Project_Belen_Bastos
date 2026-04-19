@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Bounce Park</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav-wrapper">
+      <div class="logo">Happy Bounce</div>
+      <nav class="nav">
+        <a href="#home" class="animate-item delay-1">Home</a>
+        <a href="#about" class="animate-item delay-2">About</a>
+        <a href="#activities" class="animate-item delay-3">Activities</a>
+        <a href="#parties" class="animate-item delay-4">Parties</a>
+        <a href="#contact" class="animate-item delay-5">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero parallax" id="home">
+    <div class="hero-overlay"></div>
+
+    <div class="floating-ball ball-1"></div>
+    <div class="floating-ball ball-2"></div>
+    <div class="floating-ball ball-3"></div>
+
+    <div class="container hero-content">
+      <h1 class="animate-item fade-up delay-2">Welcome to Happy Bounce Park</h1>
+      <p class="animate-item fade-up delay-3">
+        A colorful indoor ball park full of fun, slides, birthday parties, and adventure for kids.
+      </p>
+      <div class="hero-buttons animate-item fade-up delay-4">
+        <a href="#activities" class="btn btn-primary">Explore Activities</a>
+        <a href="#parties" class="btn btn-secondary">Book a Party</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-title reveal fade-up">
+        <h2>About Our Park</h2>
+        <p>Safe, colorful, and full of exciting spaces for children to play and celebrate.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card reveal fade-left">
+          <h3>Safe Play Areas</h3>
+          <p>Soft surfaces, friendly staff, and spaces designed for fun and safety.</p>
+        </div>
+        <div class="card reveal fade-up delay-1">
+          <h3>Happy Memories</h3>
+          <p>Kids enjoy every corner with ball pits, climbing areas, and mini adventures.</p>
+        </div>
+        <div class="card reveal fade-right delay-2">
+          <h3>Family Friendly</h3>
+          <p>A welcoming place where parents can relax while children have an amazing time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section activities" id="activities">
+    <div class="container">
+      <div class="section-title reveal fade-up">
+        <h2>Fun Activities</h2>
+        <p>Every zone is designed to bring joy, movement, and imagination.</p>
+      </div>
+
+      <div class="activity-grid">
+        <div class="activity-box reveal zoom-in">
+          <span>🎈</span>
+          <h3>Ball Pit Zone</h3>
+          <p>Jump, play, and dive into a giant world of colorful balls.</p>
+        </div>
+        <div class="activity-box reveal zoom-in delay-1">
+          <span>🛝</span>
+          <h3>Slides</h3>
+          <p>Big slides and soft landings for endless excitement.</p>
+        </div>
+        <div class="activity-box reveal zoom-in delay-2">
+          <span>🎂</span>
+          <h3>Birthday Parties</h3>
+          <p>Celebrate with decorations, games, food, and fun activities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section parties" id="parties">
+    <div class="container two-columns">
+      <div class="image-box reveal fade-left">
+        <img
+          src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1200&q=80"
+          alt="Kids play area"
+        />
+      </div>
+
+      <div class="text-box reveal fade-right">
+        <h2>Make Every Birthday Special</h2>
+        <p>
+          Our birthday packages include play time, decorations, seating area, and a magical experience for every child.
+        </p>
+        <a href="#contact" class="btn btn-primary">Reserve Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-title reveal fade-up">
+        <h2>Contact Us</h2>
+        <p>Come and enjoy a bright, happy, and unforgettable play experience.</p>
+      </div>
+
+      <div class="contact-box reveal fade-up delay-1">
+        <p><strong>Address:</strong> 123 Fun Street, Playtown</p>
+        <p><strong>Phone:</strong> +34 600 000 000</p>
+        <p><strong>Email:</strong> hello@happybounce.com</p>
+      </div>
+
+      <div class="contact-form-wrapper reveal fade-up delay-2">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+          </div>
+
+          <div class="form-row single-column">
+            <input type="text" placeholder="Subject" required />
+          </div>
+
+          <div class="form-row single-column">
+            <textarea placeholder="Your Message" rows="6" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-btn">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
